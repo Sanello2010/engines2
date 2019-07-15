@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engines2</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+          {% block content %}
+          {% endblock %}
+          <p>
+            <a href="/" class="btn btn-success btn-lg">Главная страница</a>
+            <a href="/news" class="btn btn-primary btn-lg">Новости &raquo;</a>
+            <a href="/blog" class="btn btn-primary btn-lg">Blog &raquo;</a>
+            <a href="/video" class="btn btn-primary btn-lg">Видео &raquo;</a>
+            <a href="/contacts" class="btn btn-info btn-lg">Контакты &raquo;</a>
+          </p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="{% static 'main_pic/engines2_index.jpg' %}" class="img-thumbnail">
+        <hr>
+        &copy; Все права защищены 2018
+    </div>
+
+
+</body>
+</html>
